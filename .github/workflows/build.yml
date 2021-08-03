@@ -1,0 +1,20 @@
+name: build
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-java@v2
+        with:
+          distribution: zulu
+          java-version: 11
+
+      - run: ./gradlew build
+
+      - run: unzip -v app/build/outputs/apk/release/app-release-unsigned.apk
+
+      - run: unzip -v app/build/outputs/apk/release/app-release-unsigned.apk | grep lib
+
+      - run: unzip -v app/build/outputs/apk/release/app-release-unsigned.apk | grep lib -q
