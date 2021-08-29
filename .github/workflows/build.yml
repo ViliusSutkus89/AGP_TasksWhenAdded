@@ -9,39 +9,8 @@ jobs:
       matrix:
         AGP:
           - 4.2.2
-
           - 7.0.0
-
-          - 7.0.0-alpha01
-          - 7.0.0-alpha02
-          - 7.0.0-alpha03
-          - 7.0.0-alpha04
-          - 7.0.0-alpha05
-          - 7.0.0-alpha06
-          - 7.0.0-alpha07
-          - 7.0.0-alpha08
-          - 7.0.0-alpha09
-          - 7.0.0-alpha10
-          - 7.0.0-alpha11
-          - 7.0.0-alpha12
-          - 7.0.0-alpha13
-          - 7.0.0-alpha14
-          - 7.0.0-alpha15
-
-          - 7.0.0-beta01
-          - 7.0.0-beta02
-          - 7.0.0-beta03
-          - 7.0.0-beta04
-          - 7.0.0-beta05
-
-          - 7.0.0-rc01
-
-          - 7.1.0-alpha01
-          - 7.1.0-alpha02
-          - 7.1.0-alpha03
-          - 7.1.0-alpha04
-          - 7.1.0-alpha05
-          - 7.1.0-alpha06
+          - 7.0.1
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-java@v2
